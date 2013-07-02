@@ -38,13 +38,13 @@ oznaczania części mowy w obu językach.
 %{__automake}
 %configure
 
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/apertium/modes
 
-%{__make} install \
+%{__make} -j1 install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 # not needed here (see modes subdir) and contain wrong (builddir) paths
