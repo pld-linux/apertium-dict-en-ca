@@ -2,12 +2,12 @@ Summary:	English-Catalan language pair for Apertium
 Summary(pl.UTF-8):	Para języków angielski-kataloński dla Apertium
 %define	lpair	en-ca
 Name:		apertium-dict-%{lpair}
-Version:	0.9.2
+Version:	0.9.3
 Release:	1
 License:	GPL v2+
 Group:		Applications/Text
 Source0:	http://downloads.sourceforge.net/apertium/apertium-%{lpair}-%{version}.tar.gz
-# Source0-md5:	c0d1a84a6dce08554bc0e9fab25a9da0
+# Source0-md5:	c984145a73c10c332c45b92bb676c37a
 URL:		http://www.apertium.org/
 BuildRequires:	apertium-devel >= 3.2.0
 BuildRequires:	autoconf >= 2.52
